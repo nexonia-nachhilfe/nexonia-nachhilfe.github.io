@@ -106,3 +106,47 @@ document.addEventListener("DOMContentLoaded", () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
+
+
+// ==========================================
+// WEB3FORMS AJAX HANDLER
+// ==========================================
+const form = document.getElementById('web3forms-form');
+const result = document.getElementById('form-result');
+
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        
+        result.textContent = "Wird gesendet...";
+        result.style.color = "var(--color-violet)";
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    result.style.color = "#10b981"; // Schönes Grün
+                    result.textContent = "Vielen Dank! Deine Nachricht wurde erfolgreich verschickt. Ich melde mich zeitnah.";
+                    form.reset();
+                } else {
+                    result.style.color = "#ef4444"; // Rot bei Fehler
+                    result.textContent = jsonResponse.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.style.color = "#ef4444";
+                result.textContent = "Etwas ist schiefgelaufen! Bitte versuche es später noch einmal.";
+            });
+    });
+}

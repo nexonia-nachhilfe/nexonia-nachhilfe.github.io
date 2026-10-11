@@ -351,88 +351,106 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
-        <section class="contact section" id="kontakt">
-            <div class="container contact-grid">
-                <div class="contact-copy">
-                    <p class="eyebrow">DER NÄCHSTE SCHRITT</p>
-                    <h2>Finden wir heraus,<br>was dir <em>weiterhilft.</em></h2>
-                    <p>Erzähl kurz, wobei Unterstützung gebraucht wird. Eine erste Anfrage ist völlig unverbindlich – alles Weitere besprechen wir gemeinsam.</p>
-                    <div class="contact-direct">
-                        <span class="contact-direct-label">DIREKT KONTAKT AUFNEHMEN</span>
-                        <a href="mailto:kontakt.nexonia-nachhilfe@outlook.de" class="contact-email">kontakt.nexonia-nachhilfe@outlook.de</a>
+<!-- KONTAKT -->
+        <section class="section section-light" id="kontakt">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Linke Spalte: Text & Messenger -->
+                    <div class="contact-info">
+                        <p class="eyebrow">KONTAKT AUFNEHMEN</p>
+                        <h2>Lass uns sprechen.</h2>
+                        <p class="contact-description">
+                            Schreib mir unverbindlich für eine Probestunde, Fragen zum Ablauf oder zur passenden Klassenstufe. Ich melde mich in der Regel innerhalb von 24 Stunden.
+                        </p>
+
+                        <div class="contact-messengers">
+                            <p class="messenger-title">Direkt & unkompliziert via Messenger:</p>
+                            <div class="messenger-links">
+                                <a href="https://discord.com/users/DEIN_DISCORD_TAG" target="_blank" rel="noopener" class="messenger-link">
+                                    <span>Discord</span> <strong>@DeinName</strong>
+                                </a>
+                                <a href="https://t.me/DEIN_TELEGRAM_HANDLE" target="_blank" rel="noopener" class="messenger-link">
+                                    <span>Telegram</span> <strong>@DeinHandle</strong>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="contact-small">Hinweis: Bitte keine sensiblen Schuldaten oder Passwörter über das Formular übermitteln.</p>
-                </div>
 
-                <div class="contact-form-wrap">
-                    <form class="contact-form" id="contact-form" action="#" method="post">
-                        <div class="form-heading">
-                            <span class="form-step">UNVERBINDLICHE ANFRAGE</span>
-                            <span class="form-required">* Pflichtfelder</span>
-                        </div>
+                    <!-- Rechte Spalte: Formular -->
+                    <div class="contact-card card">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="web3forms-form">
+                            
+                            <!-- Web3Forms Key -->
+                            <input type="hidden" name="access_key" value="cddaabb9-29fd-4a46-ab97-5ea2914088ac">
+                            <input type="hidden" name="subject" value="Neue Anfrage zu Nachhilfe">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                        <div class="form-row">
-                            <div class="form-field">
-                                <label for="name">Name (Schüler / Eltern) *</label>
-                                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-Mail *</label>
+                                    <input type="email" id="email" name="email" required placeholder="beispiel@domain.de">
+                                </div>
                             </div>
-                            <div class="form-field">
-                                <label for="email">E-Mail-Adresse *</label>
-                                <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@beispiel.de">
-                            </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-field">
-                                <label for="subject">Fach *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" selected disabled>Bitte auswählen</option>
+                            <div class="form-group">
+                                <label for="fach">Gewünschtes Fach *</label>
+                                <select id="fach" name="fach" required>
+                                    <option value="" disabled selected>Bitte wählen...</option>
                                     <option value="Mathematik">Mathematik</option>
                                     <option value="Deutsch">Deutsch</option>
                                     <option value="Latein">Latein</option>
-                                    <option value="Mehrere Fächer">Mehrere Fächer</option>
+                                    <option value="Mehrere Fächer / Allgemein">Mehrere Fächer / Allgemein</option>
                                 </select>
                             </div>
-                            <div class="form-field">
-                                <label for="grade">Klassenstufe *</label>
-                                <select id="grade" name="grade" required>
-                                    <option value="" selected disabled>Bitte auswählen</option>
-                                    <option value="5">Klasse 5</option>
-                                    <option value="6">Klasse 6</option>
-                                    <option value="7">Klasse 7</option>
-                                    <option value="8">Klasse 8</option>
-                                </select>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="klasse">Klassenstufe *</label>
+                                    <select id="klasse" name="klasse" required>
+                                        <option value="" disabled selected>Bitte wählen...</option>
+                                        <option value="Klasse 5">Klasse 5</option>
+                                        <option value="Klasse 6">Klasse 6</option>
+                                        <option value="Klasse 7">Klasse 7</option>
+                                        <option value="Klasse 8">Klasse 8</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="schulform">Schulform *</label>
+                                    <select id="schulform" name="schulform" required>
+                                        <option value="" disabled selected>Bitte wählen...</option>
+                                        <option value="Gymnasium">Gymnasium</option>
+                                        <option value="Realschule">Realschule</option>
+                                        <option value="Gesamtschule">Gesamtschule</option>
+                                        <option value="Andere Schulform">Andere Schulform</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-row">
-                            <div class="form-field" style="grid-column: span 2;">
-                                <label for="school-type">Schulform *</label>
-                                <select id="school-type" name="school-type" required>
-                                    <option value="" selected disabled>Bitte Schulform auswählen</option>
-                                    <option value="Gymnasium">Gymnasium</option>
-                                    <option value="Realschule">Realschule</option>
-                                    <option value="Gesamtschule">Gesamtschule</option>
-                                    <option value="Andere">Andere Schulform</option>
-                                </select>
+                            <div class="form-group">
+                                <label for="message">Deine Nachricht *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Erzähl kurz, wo Hilfe benötigt wird..."></textarea>
                             </div>
-                        </div>
 
-                        <div class="form-field">
-                            <label for="message">Wobei wird Unterstützung gesucht? *</label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Ein paar Stichpunkte oder Sätze reichen völlig aus..."></textarea>
-                        </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="dsgvo" name="dsgvo" required>
+                                <label for="dsgvo">
+                                    Ich stimme der Verarbeitung meiner Daten laut <a href="datenschutz.html">Datenschutzerklärung</a> zu. *
+                                </label>
+                            </div>
 
-                        <div class="form-consent">
-                            <input id="privacy" name="privacy" type="checkbox" required>
-                            <label for="privacy">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen. *</label>
-                        </div>
+                            <button type="submit" class="button button-dark button-full" id="submit-btn">
+                                Nachricht absenden <span aria-hidden="true">↗</span>
+                            </button>
 
-                        <button class="button button-dark button-submit" type="submit">Anfrage abschicken <span aria-hidden="true">↗</span></button>
-                        <p class="form-disclaimer">Hinweis: Dies ist ein Frontend-Entwurf. Vor dem Livegang wird das Formular für den echten E-Mail-Versand angebunden.</p>
-                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-                    </form>
+                            <div id="form-result" class="form-result"></div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
