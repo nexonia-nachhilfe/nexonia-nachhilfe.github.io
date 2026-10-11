@@ -2,165 +2,467 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexonia Nachhilfe – Moderne Online-Nachhilfe (Kl. 5–8)</title>
-    
-    <!-- Google Fonts für einen extrem modernen Look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Einzige Master-CSS für das gesamte Projekt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nexonia Nachhilfe: persönliche Online-Nachhilfe in Mathematik, Deutsch und Latein für die Klassen 5 bis 8. Verständlich erklärt und individuell begleitet.">
+    <title>Nexonia Nachhilfe – Verstehen, wie alles zusammenhängt</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
 
-    <!-- Header / Navigationsleiste -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-dot"></span>
-                <span class="logo-text">Nexonia <span class="logo-highlight">Nachhilfe</span></span>
+<body>
+    <a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                <span class="brand-mark" aria-hidden="true">N</span>
+                <span class="brand-copy">
+                    <span class="brand-name">nexonia</span>
+                    <span class="brand-subtitle">NACHHILFE</span>
+                </span>
             </a>
-            <nav class="nav-links">
-                <a href="#vorteile">Vorteile</a>
-                <a href="#konzept">Konzept</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Navigation öffnen">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Hauptnavigation">
+                <a href="#angebot">Angebot</a>
+                <a href="#ablauf">Ablauf</a>
                 <a href="#preise">Preise</a>
                 <a href="ueber-mich.html">Über mich</a>
+                <a class="button button-small button-dark" href="#kontakt">Kontakt aufnehmen <span aria-hidden="true">↗</span></a>
             </nav>
-            <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
         </div>
     </header>
 
-    <!-- Hero-Bereich (Der erste Eindruck) -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="badge">✨ Online-Nachhilfe für Klassen 5 bis 8</div>
-            <h1 class="hero-title">Moderne Online-Nachhilfe auf Augenhöhe.</h1>
-            <p class="hero-subtitle">
-                Strukturierte Unterstützung in Mathematik, Latein und Deutsch. 
-                100 % digital, verständlich erklärt und komplett ohne steifes Lehrer-Gehabe.
-            </p>
-            <div class="hero-buttons">
-                <a href="#preise" class="btn btn-primary btn-large">Preise & Pakete ansehen</a>
-                <a href="ueber-mich.html" class="btn btn-secondary btn-large">Mehr über mich erfährst du hier</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vorteile (Key-Facts) -->
-    <section id="vorteile" class="section">
-        <div class="container">
-            <h2 class="section-title">Warum Nexonia Nachhilfe?</h2>
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Auf Augenhöhe</h3>
-                    <p>Erklärungen von Schüler zu Schüler – auf den Punkt gebracht, sympathisch und leicht verständlich.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎧</div>
-                    <h3>Profi-Setup</h3>
-                    <p>Kristallklare Sprachqualität dank professionellem Sennheiser-Mikrofon. Kein Rauschen, kein Verhallen.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💻</div>
-                    <h3>100% Digital</h3>
-                    <p>Bequem vom eigenen Schreibtisch aus via Discord oder Teams. Inklusive digitalem Whiteboard.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Preise (Modulares 2-Karten-System) -->
-    <section id="preise" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Transparentes Preissystem</h2>
-            <p class="section-subtitle">Keine Abo-Falle, keine versteckten Kosten. Maximale Flexibilität.</p>
-            
-            <div class="grid grid-2 pricing-grid">
-                <!-- Card 1: Retterstunde -->
-                <div class="price-card">
-                    <span class="price-tag">Einzeltermin</span>
-                    <h3>Retterstunde</h3>
-                    <div class="price">17,50 € <span>/ 60 Min.</span></div>
-                    <p class="price-desc">Ideal für spontane Fragen oder gezielte Vorbereitung direkt vor einer Klassenarbeit.</p>
-                    <ul class="price-features">
-                        <li>✓ Kurzfristige Buchung möglich</li>
-                        <li>✓ Keine Kaufverpflichtung</li>
-                        <li>✓ Digitales Notizbuch als PDF</li>
-                    </ul>
-                    <a href="#kontakt" class="btn btn-secondary btn-full">Retterstunde buchen</a>
-                </div>
-
-                <!-- Card 2: 4er-Block (Bestseller) -->
-                <div class="price-card price-card-featured">
-                    <div class="badge-featured">Bestseller</div>
-                    <span class="price-tag">Paketangebot</span>
-                    <h3>4er-Block</h3>
-                    <div class="price">15,00 € <span>/ 60 Min.</span></div>
-                    <p class="price-desc">4 Stunden im Voraus (60,00 €). Perfekt für nachhaltigen Notenerfolg.</p>
-                    <ul class="price-features">
-                        <li>✓ Fester wöchentlicher Slot</li>
-                        <li>✓ 10,00 € Ersparnis gegenüber Einzelstunden</li>
-                        <li>✓ Kostenfreie Absage bis 24h vorher</li>
-                        <li>✓ WhatsApp-Support unter der Woche</li>
-                    </ul>
-                    <a href="#kontakt" class="btn btn-primary btn-full">4er-Block anfragen</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ (Aufklappbare Accordion-Streifen) -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Häufig gestellte Fragen</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Braucht mein Kind ein spezielles Programm?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Nein! Ein ganz normaler Webbrowser oder kostenlose Tools wie Discord oder Microsoft Teams reichen völlig aus.</p>
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> ONLINE-NACHHILFE · KLASSEN 5–8</p>
+                    <h1>Verstehen, wie<br>alles <span class="text-accent">zusammenhängt.</span></h1>
+                    <p class="hero-description">
+                        Gute Nachhilfe bedeutet mehr, als nur die nächste Hausaufgabe zu lösen. 
+                        Es geht darum, Zusammenhänge zu erkennen, Grundlagen zu festigen und mit einem 
+                        erfahrenen Schüler auf Augenhöhe Schritt für Schritt sicherer zu werden.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#kontakt">Nachhilfe anfragen <span aria-hidden="true">↗</span></a>
+                        <a class="text-link" href="#angebot">Angebot kennenlernen <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <div class="hero-note">
+                        <span class="note-icon" aria-hidden="true">✦</span>
+                        <p>Persönlich begleitet. Mit einem Notenschnitt von 1,1 für dich da.</p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Wie funktioniert die Bezahlung?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Die Bezahlung erfolgt ganz unkompliziert per Vorkasse mittels Banküberweisung vor der ersten Stunde.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Was passiert, wenn der Schüler einmal krank ist?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Termine können bis zu 24 Stunden vorher kostenfrei verschoben werden. Bei kurzfristigen Absagen gilt die Stunde als gehalten.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 Nexonia Nachhilfe. Alle Rechte vorbehalten.</p>
-            <div class="footer-links">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-                <a href="agb.html">AGB</a>
+                <div class="hero-visual" aria-label="Illustration zum Lernen und Verknüpfen von Wissen">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+                    <div class="visual-center">
+                        <span class="visual-symbol" aria-hidden="true">n.</span>
+                        <span class="visual-center-label">WISSEN VERKNÜPFEN</span>
+                    </div>
+                    <div class="concept concept-math">
+                        <span class="concept-icon" aria-hidden="true">∑</span>
+                        <span class="concept-label">Mathematik</span>
+                    </div>
+                    <div class="concept concept-german">
+                        <span class="concept-icon" aria-hidden="true">Aa</span>
+                        <span class="concept-label">Deutsch</span>
+                    </div>
+                    <div class="concept concept-latin">
+                        <span class="concept-icon" aria-hidden="true">Ab</span>
+                        <span class="concept-label">Latein</span>
+                    </div>
+                    <span class="visual-dot dot-one" aria-hidden="true"></span>
+                    <span class="visual-dot dot-two" aria-hidden="true"></span>
+                    <span class="visual-dot dot-three" aria-hidden="true"></span>
+                    <p class="visual-caption">Wissen ist kein Einzelteil.<br>Es gehört zusammen.</p>
+                </div>
             </div>
+            <div class="container hero-bottom">
+                <span>KLARHEIT STATT FRAGEZEICHEN</span>
+                <span class="hero-bottom-line" aria-hidden="true"></span>
+                <span>GEMEINSAM SCHRITT FÜR SCHRITT</span>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="intro section section-light">
+            <div class="container intro-grid">
+                <p class="eyebrow">DER NEXONIA-ANSATZ</p>
+                <div>
+                    <h2>Nicht nur wissen, <em>was</em> funktioniert.<br>Auch verstehen, <em>warum.</em></h2>
+                    <p class="intro-text">
+                        Wenn der Schulstoff in der Unter- und Mittelstufe anzieht, entstehen Lücken oft unbemerkt. 
+                        Wir schauen gemeinsam hin, sortieren den Lernstoff und arbeiten an den echten Ursachen – 
+                        ohne unnötigen Druck, auf Augenhöhe und mit Erklärungen, die man wirklich versteht.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBJECTS -->
+        <section class="subjects section" id="angebot">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">DAS ANGEBOT</p>
+                        <h2>Ein Fach nach dem anderen.<br><em>Zusammenhänge im Blick.</em></h2>
+                    </div>
+                    <p class="section-heading-note">Individuelle Online-Nachhilfe für Schülerinnen und Schüler der Klassen 5 bis 8.</p>
+                </div>
+
+                <div class="subject-grid">
+                    <article class="subject-card subject-math">
+                        <div class="subject-card-top">
+                            <span class="subject-number">01 / MATHEMATIK</span>
+                            <span class="subject-symbol" aria-hidden="true">∑</span>
+                        </div>
+                        <h3>Mathematik</h3>
+                        <p>Rechenwege nachvollziehen, logische Regeln verinnerlichen und auch bei komplexeren Aufgaben den Überblick behalten.</p>
+                        <ul>
+                            <li>Grundlagen sicher festigen</li>
+                            <li>Rechenwege verständlich aufbauen</li>
+                            <li>Sicherheit bei Klassenarbeiten</li>
+                        </ul>
+                        <a class="card-link" href="#kontakt">Mathe-Nachhilfe anfragen <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="subject-card subject-german">
+                        <div class="subject-card-top">
+                            <span class="subject-number">02 / DEUTSCH</span>
+                            <span class="subject-symbol" aria-hidden="true">Aa</span>
+                        </div>
+                        <h3>Deutsch</h3>
+                        <p>Sprache bewusster einsetzen, Grammatikregeln durchschauen und Gedanken klar, strukturiert und fehlerfrei ausdrücken.</p>
+                        <ul>
+                            <li>Grammatik und Rechtschreibung</li>
+                            <li>Texte analysieren und verstehen</li>
+                            <li>Aufsätze und Formulieren üben</li>
+                        </ul>
+                        <a class="card-link" href="#kontakt">Deutsch-Nachhilfe anfragen <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="subject-card subject-latin">
+                        <div class="subject-card-top">
+                            <span class="subject-number">03 / LATEIN</span>
+                            <span class="subject-symbol" aria-hidden="true">Ab</span>
+                        </div>
+                        <h3>Latein</h3>
+                        <p>Formenlehre beherrschen, Satzstrukturen logisch entschlüsseln und lateinische Texte systematisch ins Deutsche übersetzen.</p>
+                        <ul>
+                            <li>Grammatik & Vokabel-Systematik</li>
+                            <li>Satzbau und Kasus-Logik</li>
+                            <li>Übersetzen Schritt für Schritt</li>
+                        </ul>
+                        <a class="card-link" href="#kontakt">Latein-Nachhilfe anfragen <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <p class="section-footnote">Inhalte und Schwerpunkte stimmen wir passgenau auf den aktuellen Schulstoff ab.</p>
+            </div>
+        </section>
+
+        <!-- APPROACH -->
+        <section class="approach section section-dark" id="ablauf">
+            <div class="container">
+                <div class="section-heading section-heading-dark">
+                    <div>
+                        <p class="eyebrow">SO LÄUFT ES AB</p>
+                        <h2>Ein klarer Plan.<br><em>Ein Schritt nach dem anderen.</em></h2>
+                    </div>
+                    <p class="section-heading-note">Moderner Online-Unterricht via Discord oder Teams mit virtuellem Whiteboard.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <div class="step-rule"></div>
+                        <h3>Erst einmal sortieren</h3>
+                        <p>Wir klären im unverbindlichen Gespräch, wo es hakt und welche Themen als Nächstes anstehen.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <div class="step-rule"></div>
+                        <h3>Gemeinsam anpacken</h3>
+                        <p>Am digitalen Whiteboard gehen wir Aufgaben Schritt für Schritt durch, bis der Knoten platzt.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <div class="step-rule"></div>
+                        <h3>Gezielt üben</h3>
+                        <p>Durch verständliche Erklärungen und passende Übungen festigen wir das Gelernte nachhaltig.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">04</span>
+                        <div class="step-rule"></div>
+                        <h3>Sicher in die Arbeit</h3>
+                        <p>Mit frischem Selbstbewusstsein und klarem Verständnis geht es vorbereitet in die nächsten Prüfungen.</p>
+                    </article>
+                </div>
+
+                <div class="approach-bottom">
+                    <span class="approach-star" aria-hidden="true">✦</span>
+                    <p>Technisch unkompliziert: Ein internetfähiges Endgerät genügt – wir arbeiten eng und interaktiv zusammen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="pricing section section-light" id="preise">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">PREISE & PAKETE</p>
+                        <h2>Transparent von Anfang an.</h2>
+                    </div>
+                    <p class="section-heading-note">Faire Konditionen ohne versteckte Kosten und mit verlässlichem Ausfallschutz.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <p class="price-label">FLEXIBEL STARTEN</p>
+                        <h3>Einzelstunde</h3>
+                        <p class="price-description">Für gezielte Fragen vor Klassenarbeiten oder zum Kennenlernen (60 Minuten).</p>
+                        <div class="price-amount"><span>17,50 €</span></div>
+                        <p class="price-unit">pro Unterrichtsstunde (60 Min.)</p>
+                        <ul class="price-features">
+                            <li>Volle Flexibilität</li>
+                            <li>Individuelle Schwerpunktsetzung</li>
+                            <li>Online via Discord / Teams</li>
+                        </ul>
+                        <a class="button button-outline" href="#kontakt">Einzelstunde anfragen <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="price-card price-card-featured">
+                        <span class="price-badge">EMPFOHLEN</span>
+                        <p class="price-label">PLANBAR LERNEN</p>
+                        <h3>4er-Block (Paket)</h3>
+                        <p class="price-description">Der ideale Rhythmus, um Noten nachhaltig zu verbessern und Lücken zu schließen.</p>
+                        <div class="price-amount"><span>60,00 €</span></div>
+                        <p class="price-unit">Gesamtpreis für 4 Einheiten à 60 Min. (15 € / Std.)</p>
+                        <ul class="price-features">
+                            <li>4 Unterrichtsstunden (je 60 Min.)</li>
+                            <li>Fester, verlässlicher Lernrhythmus</li>
+                            <li>Volle Erstattung bei ungenutzten Stunden</li>
+                        </ul>
+                        <a class="button button-dark" href="#kontakt">Paket anfragen <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+                <p class="pricing-note">Fairness-Garantie: Kostenfreie Terminverschiebung oder Absage bis 24 Stunden vor Unterrichtsbeginn.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT TEASER -->
+        <section class="about-teaser section">
+            <div class="container about-grid">
+                <div class="about-art" aria-hidden="true">
+                    <div class="about-art-paper paper-back"></div>
+                    <div class="about-art-paper paper-front">
+                        <span class="paper-small">NEXONIA · PHILOSOPHIE</span>
+                        <span class="paper-large">Verstehen.</span>
+                        <span class="paper-large paper-indent">Verknüpfen.</span>
+                        <span class="paper-large">Weiterkommen.</span>
+                        <span class="paper-scribble">↗</span>
+                    </div>
+                    <span class="about-art-caption">LERNEN AUF AUGENHÖHE</span>
+                </div>
+                <div class="about-copy">
+                    <p class="eyebrow">WER DAHINTERSTECKT</p>
+                    <h2>Erklärungen auf Augenhöhe machen den <em>Unterschied.</em></h2>
+                    <p>
+                        Mein Name ist Julian Kaiser und ich stehe mit eigener Begeisterung für Mathe, Deutsch und Latein
+                        und einem Notenschnitt von 1,1 hinter Nexonia. Weil ich selbst noch aktiv im Schulsystem stehe, weiß ich genau, 
+                        welche Hürden in den Klassen 5 bis 8 lauern und wie man sie knackt.
+                    </p>
+                    <p class="about-placeholder-note">
+                        Erfahre mehr über meine Motivation, mein Konzept und warum Nachhilfe bei mir Spaß macht.
+                    </p>
+                    <a class="button button-outline" href="ueber-mich.html">Mehr über mich <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section section-light" id="faq">
+            <div class="container faq-grid">
+                <div class="faq-intro">
+                    <p class="eyebrow">GUT ZU WISSEN</p>
+                    <h2>Häufige Fragen.<br><em>Klare Antworten.</em></h2>
+                    <p>Du hast eine Frage, die hier nicht beantwortet wird? Schreib sie gern direkt in deine Anfrage.</p>
+                    <a class="text-link" href="#kontakt">Frage stellen <span aria-hidden="true">↗</span></a>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Für welche Klassen ist die Nachhilfe gedacht?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Das Angebot richtet sich gezielt an Schülerinnen und Schüler der Klassenstufen 5 bis 8.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Welche Fächer werden angeboten?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Mathematik, Deutsch und Latein. Die Inhalte werden jeweils an den individuellen Bedarf angepasst.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Wie läuft der Online-Unterricht ab?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Wir treffen uns digital (z. B. über Discord oder Microsoft Teams) und arbeiten mit einem gemeinsamen digitalen Whiteboard, auf dem in Echtzeit mitgeschrieben und erklärt wird.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Was passiert bei kurzfristiger Absage oder Krankheit?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Termine können bis zu 24 Stunden vorher kostenfrei abgesagt oder verschoben werden. Bei späterer Absage muss die Stunde leider berechnet werden.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Wie funktioniert die Bezahlung?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Die Abrechnung erfolgt bequem per Vorkasse (Einzelstunde oder 4er-Block) vor Beginn der Unterrichtseinheit per Überweisung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact section" id="kontakt">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow">DER NÄCHSTE SCHRITT</p>
+                    <h2>Finden wir heraus,<br>was dir <em>weiterhilft.</em></h2>
+                    <p>Erzähl kurz, wobei Unterstützung gebraucht wird. Eine erste Anfrage ist völlig unverbindlich – alles Weitere besprechen wir gemeinsam.</p>
+                    <div class="contact-direct">
+                        <span class="contact-direct-label">DIREKT KONTAKT AUFNEHMEN</span>
+                        <a href="mailto:kontakt.nexonia-nachhilfe@outlook.de" class="contact-email">kontakt.nexonia-nachhilfe@outlook.de</a>
+                    </div>
+                    <p class="contact-small">Hinweis: Bitte keine sensiblen Schuldaten oder Passwörter über das Formular übermitteln.</p>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contact-form" action="#" method="post">
+                        <div class="form-heading">
+                            <span class="form-step">UNVERBINDLICHE ANFRAGE</span>
+                            <span class="form-required">* Pflichtfelder</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name (Schüler / Eltern) *</label>
+                                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">E-Mail-Adresse *</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@beispiel.de">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="subject">Fach *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" selected disabled>Bitte auswählen</option>
+                                    <option value="Mathematik">Mathematik</option>
+                                    <option value="Deutsch">Deutsch</option>
+                                    <option value="Latein">Latein</option>
+                                    <option value="Mehrere Fächer">Mehrere Fächer</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="grade">Klassenstufe *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="" selected disabled>Bitte auswählen</option>
+                                    <option value="5">Klasse 5</option>
+                                    <option value="6">Klasse 6</option>
+                                    <option value="7">Klasse 7</option>
+                                    <option value="8">Klasse 8</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field" style="grid-column: span 2;">
+                                <label for="school-type">Schulform *</label>
+                                <select id="school-type" name="school-type" required>
+                                    <option value="" selected disabled>Bitte Schulform auswählen</option>
+                                    <option value="Gymnasium">Gymnasium</option>
+                                    <option value="Realschule">Realschule</option>
+                                    <option value="Gesamtschule">Gesamtschule</option>
+                                    <option value="Andere">Andere Schulform</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="message">Wobei wird Unterstützung gesucht? *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Ein paar Stichpunkte oder Sätze reichen völlig aus..."></textarea>
+                        </div>
+
+                        <div class="form-consent">
+                            <input id="privacy" name="privacy" type="checkbox" required>
+                            <label for="privacy">Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen. *</label>
+                        </div>
+
+                        <button class="button button-dark button-submit" type="submit">Anfrage abschicken <span aria-hidden="true">↗</span></button>
+                        <p class="form-disclaimer">Hinweis: Dies ist ein Frontend-Entwurf. Vor dem Livegang wird das Formular für den echten E-Mail-Versand angebunden.</p>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <a class="brand brand-footer" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                    <span class="brand-mark" aria-hidden="true">N</span>
+                    <span class="brand-copy">
+                        <span class="brand-name">nexonia</span>
+                        <span class="brand-subtitle">NACHHILFE</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">Verstehen, wie alles zusammenhängt.</p>
+                <a class="footer-top-link" href="#top">Zurück nach oben ↑</a>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="current-year">2026</span> Nexonia Nachhilfe</span>
+                <nav class="footer-legal" aria-label="Rechtliche Informationen">
+                    <a href="ueber-mich.html">Über mich</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </nav>
+            </div>
+            <p class="footer-note">Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen (Kleinunternehmerregelung).</p>
         </div>
     </footer>
-
-    <!-- Zentrale JS-Datei für Animationen & Interaktionen -->
-    <script src="js/main.js"></script>
 </body>
 </html>

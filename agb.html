@@ -2,117 +2,185 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgemeine Geschäftsbedingungen (AGB) – Nexonia Nachhilfe</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Zentrale Master-CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Allgemeine Geschäftsbedingungen (AGB) – Nexonia Nachhilfe: Regelungen zu Unterricht, Buchung, Absagen und Bezahlung.">
+    <title>AGB – Nexonia Nachhilfe</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
 
-    <!-- Header / Navigationsleiste -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-dot"></span>
-                <span class="logo-text">Nexonia <span class="logo-highlight">Nachhilfe</span></span>
+<body>
+    <a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                <span class="brand-mark" aria-hidden="true">N</span>
+                <span class="brand-copy">
+                    <span class="brand-name">nexonia</span>
+                    <span class="brand-subtitle">NACHHILFE</span>
+                </span>
             </a>
-            <nav class="nav-links">
-                <a href="index.html#vorteile">Vorteile</a>
-                <a href="index.html#konzept">Konzept</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Navigation öffnen">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Hauptnavigation">
+                <a href="index.html#angebot">Angebot</a>
+                <a href="index.html#ablauf">Ablauf</a>
                 <a href="index.html#preise">Preise</a>
                 <a href="ueber-mich.html">Über mich</a>
+                <a class="button button-small button-dark" href="index.html#kontakt">Kontakt aufnehmen <span aria-hidden="true">↗</span></a>
             </nav>
-            <a href="index.html#kontakt" class="btn btn-primary">Jetzt anfragen</a>
         </div>
     </header>
 
-    <!-- AGB Sektion -->
-    <section class="section">
-        <div class="container legal-container">
-            <h1 class="section-title">Allgemeine Geschäftsbedingungen (AGB)</h1>
-            <p class="section-subtitle">Stand: Oktober 2026 – Nexonia Nachhilfe</p>
-            
-            <div class="card legal-card">
-                
-                <h3>§ 1 Geltungsbereich & Vertragspartner</h3>
-                <p>
-                    (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über die Erbringung von Online-Nachhilfedienstleistungen zwischen dem Anbieter von <strong>Nexonia Nachhilfe</strong> (nachfolgend „Anbieter“) und den Kunden (Schülern bzw. deren gesetzlichen Vertretern, nachfolgend „Kunde“).<br>
-                    (2) Da der Unterrichtende minderjährig ist (§ 106 BGB), erfolgt der Vertragsschluss und die Durchführung des Nachhilfeangebots mit ausdrücklicher Einwilligung der Erziehungsberechtigten gemäß § 107 BGB[cite: 1, 2]. Verträge mit minderjährigen Schülern bedürfen der Zustimmung der Erziehungsberechtigten.
-                </p>
+    <main id="main">
+        <section class="section" style="padding: 5rem 0;">
+            <div class="container" style="max-width: 820px;">
+                <p class="eyebrow"><span class="eyebrow-line"></span> RECHTLICHE ANGABEN</p>
+                <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 2.5rem;">Allgemeine Geschäftsbedingungen (AGB)</h1>
 
-                <h3>§ 2 Leistungsgegenstand & Durchführung</h3>
-                <p>
-                    (1) Der Anbieter erbringt individuelle Online-Nachhilfeunterstützung in den Fächern Mathematik, Latein und Deutsch für die Klassenstufen 5 bis 8[cite: 1, 2].<br>
-                    (2) Eine Unterrichtseinheit beträgt exakt <strong>60 Minuten</strong>[cite: 1, 2].<br>
-                    (3) Der Unterricht findet vollständig digital statt (z. B. via Discord, Microsoft Teams oder Skype)[cite: 1, 2]. Der Kunde ist selbst dafür verantwortlich, ein betriebsbereites Endgerät mit Internetzugang bereitzustellen.<br>
-                    (4) Der Unterricht ist eine Dienstleistung. Ein bestimmter schuldienstlicher oder akademischer Erfolg (z. B. das Erreichen einer konkreten Note) wird ausdrücklich nicht geschuldet.
-                </p>
+                <div style="display: grid; gap: 2rem; color: var(--color-muted); line-height: 1.8;">
 
-                <h3>§ 3 Preise, Buchungsoptionen & Zahlungsbedingungen (Vorkasse)</h3>
-                <p>
-                    (1) Es gelten die zum Zeitpunkt der Buchung auf der Website angegebenen Preise. Alle Preise verstehen sich als Endpreise[cite: 1, 2].<br>
-                    (2) <strong>Retterstunde (Einzeltermin):</strong> Abrechnung zum Einzelstunden-Tarif von 17,50 € pro 60 Minuten[cite: 1, 2].<br>
-                    (3) <strong>4er-Block (Paketangebot):</strong> Paketbuchung über 4 Einheiten à 60 Minuten zum Gesamtpreis von 60,00 € (entspricht 15,00 € pro Stunde)[cite: 1, 2].<br>
-                    (4) <strong>Vorkassen-Prinzip:</strong> Die Vergütung ist vor Beginn der ersten Unterrichtsstunde bzw. des gewählten Blocks per Banküberweisung auf das angegebene Konto zu entrichten[cite: 1, 2]. Der Anspruch auf Durchführung der Unterrichtseinheit entsteht erst nach vollständigem Zahlungseingang[cite: 1, 2].
-                </p>
+                    <!-- § 1 Geltungsbereich -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 1 Geltungsbereich & Vertragspartner</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über Dienstleistungen im Bereich der Online-Nachhilfe zwischen <strong>Nexonia Nachhilfe</strong> (Inhaber: Julian Kaiser, Novalisstraße 2, 06295 Lutherstadt Eisleben – nachfolgend „Anbieter“) und dem Kunden (nachfolgend „Kunde“).
+                        </p>
+                        <p style="margin: 0;">
+                            (2) Kunden im Sinne dieser AGB sind sowohl Schülerinnen und Schüler als auch deren gesetzliche Vertreter (Eltern/Erziehungsberechtigte), die den Vertrag im Namen und für Rechnung des Schülers abschließen.
+                        </p>
+                    </div>
 
-                <h3>§ 4 Absageregelung, Stornierung & Terminverschiebung</h3>
-                <p>
-                    (1) <strong>24-Stunden-Absageregelung durch den Kunden:</strong> Absagen oder Terminverschiebungen durch den Kunden sind bis spätestens <strong>24 Stunden vor dem vereinbarten Termin</strong> kostenfrei möglich[cite: 1, 2]. In diesem Fall wird ein Ersatztermin vereinbart[cite: 1, 2].<br>
-                    (2) <strong>Verspätete Absage / Unentschuldigtes Fehlen:</strong> Erreicht den Anbieter eine Absage weniger als 24 Stunden vor Terminbeginn oder erscheint der Schüler nicht zum vereinbarten Termin, gilt die Stunde als vollumfänglich erbracht und wird berechnet bzw. vom gebuchten Stundenkontingent abgezogen (Schadensersatz für reservierte Zeiträume)[cite: 1, 2].<br>
-                    (3) <strong>Absage durch den Anbieter:</strong> Muss ein Termin durch den Anbieter (z. B. wegen eigener schulischer Klausurenphasen oder Krankheit) abgesagt werden, wird die Stunde zeitnah und ohne Zusatzkosten nachgeholt[cite: 1, 2]. Ein Verfall von Guthaben findet in diesem Fall nicht statt[cite: 1, 2].
-                </p>
+                    <!-- § 2 Vertragsgegenstand -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 2 Leistungsumfang & Durchführung</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Der Anbieter erbringt Dienstleistungen im Bereich der individuellen Lernförderung und Online-Nachhilfe in den Fächern Mathematik, Deutsch und Latein für die Klassenstufen 5 bis 8.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            (2) Der Unterricht findet ausschließlich online über Videokonferenz- und Kommunikationsplattformen (z. B. Discord oder Microsoft Teams) sowie interaktive digitale Whiteboards statt.
+                        </p>
+                        <p style="margin: 0;">
+                            (3) Der Anbieter schuldet die sorgfältige Vorbereitung und Durchführung des Nachhilfeunterrichts. Ein konkreter schulischer Erfolg oder eine bestimmte Notenverbesserung kann rechtlich nicht garantiert werden.
+                        </p>
+                    </div>
 
-                <h3>§ 5 Vorzeitiger Vertragsrücktritt & Erstattung</h3>
-                <p>
-                    (1) Wird ein gebuchter 4er-Block auf Wunsch des Kunden vorzeitig abgebrochen, werden die bereits in Anspruch genommenen Unterrichtsstunden zum regulären Einzelstunden-Tarif (17,50 €) nachberechnet[cite: 1, 2].<br>
-                    (2) Das verbleibende Restguthaben nach Verrechnung der gehaltenen Stunden wird dem Kunden unverzüglich auf dessen Bankkonto erstattet[cite: 1, 2].
-                </p>
+                    <!-- § 3 Vertragsschluss -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 3 Vertragsschluss & Terminvereinbarung</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Die Darstellung der Angebote auf der Website stellt kein rechtlich bindendes Angebot, sondern eine unverbindliche Aufforderung zur Abgabe einer Anfrage dar.
+                        </p>
+                        <p style="margin: 0;">
+                            (2) Nach Absendung einer Anfrage über das Kontaktformular oder per E-Mail stimmt der Anbieter den Unterrichtstermin und den Leistungsumfang mit dem Kunden ab. Der Vertrag kommt durch die ausdrückliche Bestätigung des Termins bzw. der Buchung per E-Mail zustande.
+                        </p>
+                    </div>
 
-                <h3>§ 6 Technische Störungen</h3>
-                <p>
-                    (1) Bei technischen Störungen auf Seiten des Anbieters (z. B. Ausfall der Internetverbindung) wird die ausgefallene Unterrichtszeit unkompliziert nachgeholt oder an die Folgestunde angehängt[cite: 1, 2].<br>
-                    (2) Liegt die technische Störung im Verantwortungsbereich des Kunden und verhindert die Durchführung der Stunde länger als 15 Minuten, gilt die Stunde als erbracht, sofern der Anbieter einsatzbereit war.
-                </p>
+                    <!-- § 4 Preise & Zahlungsbedingungen -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 4 Preise & Zahlungsbedingungen</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Es gelten die zum Zeitpunkt der Buchung auf der Website angegebenen Preise. Alle Preise sind Endpreise. Gemäß <strong>§ 19 UStG</strong> wird keine Umsatzsteuer berechnet und ausgewiesen (Kleinunternehmerregelung).
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            (2) Die Vergütung ist vor Beginn der gebuchten Unterrichtseinheit bzw. vor Beginn des 4er-Blocks per Banküberweisung im Voraus (Vorkasse) fällig.
+                        </p>
+                        <p style="margin: 0;">
+                            (3) Werden vereinbarte 4er-Blöcke gebucht, ist der Gesamtbetrag von 60,00 € vor Antritt der ersten Einheit zu entrichten.
+                        </p>
+                    </div>
 
-                <h3>§ 7 Urheberrecht & Unterrichtsmaterialien</h3>
-                <p>
-                    Alle im Unterricht zur Verfügung gestellten Unterlagen, digitalen Tafelbilder (PDF-Exporte des Whiteboards) und Arbeitsblätter sind ausschließlich für den persönlichen Gebrauch des jeweiligen Schülers bestimmt[cite: 1, 2]. Eine Vervielfältigung, Weitergabe oder kommerzielle Nutzung durch Dritte ist ohne schriftliche Zustimmung untersagt.
-                </p>
+                    <!-- § 5 Absageregelung -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 5 Terminabsagen & Stornierung (24h-Regel)</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Vereinbarte Unterrichtstermine können vom Kunden bis zu <strong>24 Stunden vor dem Termin</strong> kostenfrei per E-Mail oder Nachricht abgesagt oder verschoben werden.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            (2) Bei einer Absage weniger als 24 Stunden vor Unterrichtsbeginn sowie bei unentschuldigtem Nichterscheinen des Schülers verfällt der Anspruch auf Nachholung der Unterrichtseinheit. Die Unterrichtsstunde wird in diesem Fall voll berechnet bzw. vom Kontingent des 4er-Blocks abgezogen.
+                        </p>
+                        <p style="margin: 0;">
+                            (3) Bei einer Verhinderung des Anbieters (z. B. wegen Krankheit) wird die Stunde nicht berechnet und baldmöglichst ein Ersatztermin vereinbart.
+                        </p>
+                    </div>
 
-                <h3>§ 8 Haftungsbeschränkung</h3>
-                <p>
-                    Der Anbieter haftet nur für Schäden, die auf vorsätzlichen oder grob fahrlässigen Pflichtverletzungen beruhen. Für leichte Fahrlässigkeit haftet der Anbieter nur bei Verletzung von Leben, Körper oder Gesundheit.
-                </p>
+                    <!-- § 6 Pflichten des Kunden -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 6 Technische Voraussetzungen & Pflichten des Kunden</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Der Kunde ist dafür verantwortlich, dass dem Schüler zur vereinbarten Zeit ein geeignetes Endgerät (PC, Laptop oder Tablet) mit funktionierender Internetverbindung, Mikrofon und Lautsprecher/Headset zur Verfügung steht.
+                        </p>
+                        <p style="margin: 0;">
+                            (2) Technische Störungen auf Seiten des Kunden berechtigen nicht zur Erstattung oder kostenfreien Nachholung der Unterrichtszeit, sofern der Anbieter die Störung nicht zu vertreten hat.
+                        </p>
+                    </div>
 
-                <h3>§ 9 Schlussbestimmungen</h3>
-                <p>
-                    Sollte eine Bestimmung dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt. Es gilt das Recht der Bundesrepublik Deutschland.
-                </p>
+                    <!-- § 7 Urheberrecht -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 7 Urheberrecht & Unterrichtsmaterialien</h3>
+                        <p style="margin: 0;">
+                            Vom Anbieter zur Verfügung gestellte Unterrichtsmaterialien, Aufgaben und Mitschriften sind urheberrechtlich geschützt. Sie sind ausschließlich für den persönlichen Gebrauch des Schülers bestimmt. Eine Weitergabe an Dritte oder eine kommerzielle Nutzung ist ohne vorherige schriftliche Zustimmung nicht gestattet.
+                        </p>
+                    </div>
 
+                    <!-- § 8 Widerrufsrecht -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 8 Widerrufsrecht für Verbraucher</h3>
+                        <p style="margin-bottom: 1rem;">
+                            Verbrauchern steht bei außerhalb von Geschäftsräumen geschlossenen Verträgen und bei Fernabsatzverträgen ein gesetzliches Widerrufsrecht von 14 Tagen zu.
+                        </p>
+                        <p style="margin: 0;">
+                            Wünscht der Kunde, dass die Dienstleistung bereits vor Ablauf der 14-tägigen Widerrufsfrist beginnt, bestätigt er dies bei der Buchung und stimmt zu, dass das Widerrufsrecht bei vollständiger Erfüllung der Leistung erlischt.
+                        </p>
+                    </div>
+
+                    <!-- § 9 Schlussbestimmungen -->
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">§ 9 Schlussbestimmungen</h3>
+                        <p style="margin-bottom: 1rem;">
+                            (1) Es gilt das Recht der Bundesrepublik Deutschland.
+                        </p>
+                        <p style="margin: 0;">
+                            (2) Sollte eine Bestimmung dieser AGB unwirksam oder undurchführbar sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt (Salvatorische Klausel).
+                        </p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 Nexonia Nachhilfe. Alle Rechte vorbehalten.</p>
-            <div class="footer-links">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-                <a href="agb.html" class="active">AGB</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <a class="brand brand-footer" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                    <span class="brand-mark" aria-hidden="true">N</span>
+                    <span class="brand-copy">
+                        <span class="brand-name">nexonia</span>
+                        <span class="brand-subtitle">NACHHILFE</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">Verstehen, wie alles zusammenhängt.</p>
+                <a class="footer-top-link" href="#top">Zurück nach oben ↑</a>
             </div>
+            <div class="footer-bottom">
+                <span>© <span id="current-year">2026</span> Nexonia Nachhilfe</span>
+                <nav class="footer-legal" aria-label="Rechtliche Informationen">
+                    <a href="ueber-mich.html">Über mich</a>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html" class="active">AGB</a>
+                </nav>
+            </div>
+            <p class="footer-note">Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen (Kleinunternehmerregelung).</p>
         </div>
     </footer>
-
-    <!-- Zentrale JS-Datei -->
-    <script src="js/main.js"></script>
 </body>
 </html>

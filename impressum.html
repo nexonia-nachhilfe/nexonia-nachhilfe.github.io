@@ -2,88 +2,130 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Impressum – Nexonia Nachhilfe: Gesetzliche Angaben, Haftungsausschluss und Kontaktinformationen.">
     <title>Impressum – Nexonia Nachhilfe</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Zentrale Master-CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
 
-    <!-- Header / Navigationsleiste -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-dot"></span>
-                <span class="logo-text">Nexonia <span class="logo-highlight">Nachhilfe</span></span>
+<body>
+    <a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                <span class="brand-mark" aria-hidden="true">N</span>
+                <span class="brand-copy">
+                    <span class="brand-name">nexonia</span>
+                    <span class="brand-subtitle">NACHHILFE</span>
+                </span>
             </a>
-            <nav class="nav-links">
-                <a href="index.html#vorteile">Vorteile</a>
-                <a href="index.html#konzept">Konzept</a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Navigation öffnen">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Hauptnavigation">
+                <a href="index.html#angebot">Angebot</a>
+                <a href="index.html#ablauf">Ablauf</a>
                 <a href="index.html#preise">Preise</a>
                 <a href="ueber-mich.html">Über mich</a>
+                <a class="button button-small button-dark" href="index.html#kontakt">Kontakt aufnehmen <span aria-hidden="true">↗</span></a>
             </nav>
-            <a href="index.html#kontakt" class="btn btn-primary">Jetzt anfragen</a>
         </div>
     </header>
 
-    <!-- Impressum Sektion -->
-    <section class="section">
-        <div class="container legal-container">
-            <h1 class="section-title">Impressum</h1>
-            
-            <div class="card legal-card">
-                <h3>Angaben gemäß § 5 TMG</h3>
-                <p>
-                    <strong>Name / Verantwortlich:</strong><br>
-                    [Dein Vorname Nachname]<br>
-                    [Deine Straße und Hausnummer]<br>
-                    [Deine PLZ und Ort]
-                </p>
+    <main id="main">
+        <section class="section" style="padding: 5rem 0;">
+            <div class="container" style="max-width: 820px;">
+                <p class="eyebrow"><span class="eyebrow-line"></span> RECHTLICHE ANGABEN</p>
+                <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 2.5rem;">Impressum</h1>
 
-                <h3>Kontakt</h3>
-                <p>
-                    Telefon: [Deine Telefonnummer, optional]<br>
-                    E-Mail: [Deine E-Mail-Adresse]
-                </p>
+                <div style="display: grid; gap: 2rem; color: var(--color-muted); line-height: 1.8;">
+                    
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">Angaben gemäß § 5 TMG</h3>
+                        <p style="margin: 0;">
+                            Julian Kaiser<br>
+                            Novalisstraße 2<br>
+                            06295 Lutherstadt Eisleben<br>
+                            Deutschland
+                        </p>
+                    </div>
 
-                <h3>Vertretungsberechtigte / Gesetzliche Vertreter</h3>
-                <p>
-                    Da der Diensteanbieter minderjährig ist, wird das Angebot in Abstimmung mit den Erziehungsberechtigten bereitgestellt:<br>
-                    [Name der Eltern / Erziehungsberechtigten]
-                </p>
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">Kontakt</h3>
+                        <p style="margin: 0;">
+                            E-Mail: <a href="mailto:kontakt.nexonia-nachhilfe@outlook.de" style="color: var(--color-violet); text-decoration: underline;">kontakt.nexonia-nachhilfe@outlook.de</a><br>
+                        </p>
+                    </div>
 
-                <h3>Haftung für Inhalte</h3>
-                <p>
-                    Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-                </p>
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">Umsatzsteuer-Hinweis</h3>
+                        <p style="margin: 0;">
+                            Gemäß § 19 UStG wird keine Umsatzsteuer berechnet oder ausgewiesen (Kleinunternehmerregelung).
+                        </p>
+                    </div>
 
-                <h3>Urheberrecht</h3>
-                <p>
-                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-                </p>
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">EU-Streitschlichtung</h3>
+                        <p style="margin-bottom: 0;">
+                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+                            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener" style="color: var(--color-violet); text-decoration: underline;">https://ec.europa.eu/consumers/odr/</a>.<br>
+                            Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                        </p>
+                    </div>
+
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">Haftung für Inhalte & Links</h3>
+                        <p style="margin-bottom: 1rem;">
+                            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+                        </p>
+                        <p style="margin: 0;">
+                            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                        </p>
+                    </div>
+
+                    <div class="card" style="background: var(--color-white); border: 1px solid var(--color-line); padding: 30px; border-radius: var(--radius-md);">
+                        <h3 style="color: var(--color-ink); font-size: 1.2rem; margin-bottom: 0.75rem;">Urheberrecht</h3>
+                        <p style="margin: 0;">
+                            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                        </p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 Nexonia Nachhilfe. Alle Rechte vorbehalten.</p>
-            <div class="footer-links">
-                <a href="impressum.html" class="active">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
-                <a href="agb.html">AGB</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <a class="brand brand-footer" href="index.html" aria-label="Nexonia Nachhilfe – Startseite">
+                    <span class="brand-mark" aria-hidden="true">N</span>
+                    <span class="brand-copy">
+                        <span class="brand-name">nexonia</span>
+                        <span class="brand-subtitle">NACHHILFE</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">Verstehen, wie alles zusammenhängt.</p>
+                <a class="footer-top-link" href="#top">Zurück nach oben ↑</a>
             </div>
+            <div class="footer-bottom">
+                <span>© <span id="current-year">2026</span> Nexonia Nachhilfe</span>
+                <nav class="footer-legal" aria-label="Rechtliche Informationen">
+                    <a href="ueber-mich.html">Über mich</a>
+                    <a href="impressum.html" class="active">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                    <a href="agb.html">AGB</a>
+                </nav>
+            </div>
+            <p class="footer-note">Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen (Kleinunternehmerregelung).</p>
         </div>
     </footer>
-
-    <!-- Zentrale JS-Datei -->
-    <script src="js/main.js"></script>
 </body>
 </html>
