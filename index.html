@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexonia Nachhilfe – Moderne Online-Nachhilfe (Kl. 5–8)</title>
+    
+    <!-- Google Fonts für einen extrem modernen Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Einzige Master-CSS für das gesamte Projekt -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigationsleiste -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">Nexonia <span class="logo-highlight">Nachhilfe</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#vorteile">Vorteile</a>
+                <a href="#konzept">Konzept</a>
+                <a href="#preise">Preise</a>
+                <a href="ueber-mich.html">Über mich</a>
+            </nav>
+            <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
+        </div>
+    </header>
+
+    <!-- Hero-Bereich (Der erste Eindruck) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="badge">✨ Online-Nachhilfe für Klassen 5 bis 8</div>
+            <h1 class="hero-title">Moderne Online-Nachhilfe auf Augenhöhe.</h1>
+            <p class="hero-subtitle">
+                Strukturierte Unterstützung in Mathematik, Latein und Deutsch. 
+                100 % digital, verständlich erklärt und komplett ohne steifes Lehrer-Gehabe.
+            </p>
+            <div class="hero-buttons">
+                <a href="#preise" class="btn btn-primary btn-large">Preise & Pakete ansehen</a>
+                <a href="ueber-mich.html" class="btn btn-secondary btn-large">Mehr über mich erfährst du hier</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vorteile (Key-Facts) -->
+    <section id="vorteile" class="section">
+        <div class="container">
+            <h2 class="section-title">Warum Nexonia Nachhilfe?</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Auf Augenhöhe</h3>
+                    <p>Erklärungen von Schüler zu Schüler – auf den Punkt gebracht, sympathisch und leicht verständlich.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎧</div>
+                    <h3>Profi-Setup</h3>
+                    <p>Kristallklare Sprachqualität dank professionellem Sennheiser-Mikrofon. Kein Rauschen, kein Verhallen.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>100% Digital</h3>
+                    <p>Bequem vom eigenen Schreibtisch aus via Discord oder Teams. Inklusive digitalem Whiteboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preise (Modulares 2-Karten-System) -->
+    <section id="preise" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Transparentes Preissystem</h2>
+            <p class="section-subtitle">Keine Abo-Falle, keine versteckten Kosten. Maximale Flexibilität.</p>
+            
+            <div class="grid grid-2 pricing-grid">
+                <!-- Card 1: Retterstunde -->
+                <div class="price-card">
+                    <span class="price-tag">Einzeltermin</span>
+                    <h3>Retterstunde</h3>
+                    <div class="price">17,50 € <span>/ 60 Min.</span></div>
+                    <p class="price-desc">Ideal für spontane Fragen oder gezielte Vorbereitung direkt vor einer Klassenarbeit.</p>
+                    <ul class="price-features">
+                        <li>✓ Kurzfristige Buchung möglich</li>
+                        <li>✓ Keine Kaufverpflichtung</li>
+                        <li>✓ Digitales Notizbuch als PDF</li>
+                    </ul>
+                    <a href="#kontakt" class="btn btn-secondary btn-full">Retterstunde buchen</a>
+                </div>
+
+                <!-- Card 2: 4er-Block (Bestseller) -->
+                <div class="price-card price-card-featured">
+                    <div class="badge-featured">Bestseller</div>
+                    <span class="price-tag">Paketangebot</span>
+                    <h3>4er-Block</h3>
+                    <div class="price">15,00 € <span>/ 60 Min.</span></div>
+                    <p class="price-desc">4 Stunden im Voraus (60,00 €). Perfekt für nachhaltigen Notenerfolg.</p>
+                    <ul class="price-features">
+                        <li>✓ Fester wöchentlicher Slot</li>
+                        <li>✓ 10,00 € Ersparnis gegenüber Einzelstunden</li>
+                        <li>✓ Kostenfreie Absage bis 24h vorher</li>
+                        <li>✓ WhatsApp-Support unter der Woche</li>
+                    </ul>
+                    <a href="#kontakt" class="btn btn-primary btn-full">4er-Block anfragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Aufklappbare Accordion-Streifen) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Häufig gestellte Fragen</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Braucht mein Kind ein spezielles Programm?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nein! Ein ganz normaler Webbrowser oder kostenlose Tools wie Discord oder Microsoft Teams reichen völlig aus.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Wie funktioniert die Bezahlung?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Die Bezahlung erfolgt ganz unkompliziert per Vorkasse mittels Banküberweisung vor der ersten Stunde.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Was passiert, wenn der Schüler einmal krank ist?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Termine können bis zu 24 Stunden vorher kostenfrei verschoben werden. Bei kurzfristigen Absagen gilt die Stunde als gehalten.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Nexonia Nachhilfe. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="agb.html">AGB</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Zentrale JS-Datei für Animationen & Interaktionen -->
+    <script src="js/main.js"></script>
+</body>
+</html>
