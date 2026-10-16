@@ -150,3 +150,38 @@ if (form) {
             });
     });
 }
+
+
+// ==========================================
+// AUTOMATISCHE TARIF-SPERRE BEI METHODIK
+// ==========================================
+const fachSelect = document.getElementById('fach');
+const tarifSelect = document.getElementById('tarif');
+
+if (fachSelect && tarifSelect) {
+    fachSelect.addEventListener('change', function() {
+        // Prüfen, ob das Methodik-Paket gewählt wurde
+        if (this.value === 'Lernen Lernen (Methodik)') {
+            tarifSelect.value = '4er-Paket';
+            tarifSelect.disabled = true;
+            
+            // Verstecktes Input-Feld erstellen, damit Web3Forms den Wert trotz 'disabled' mitsendet
+            let hiddenTarif = document.getElementById('hidden-tarif');
+            if (!hiddenTarif) {
+                hiddenTarif = document.createElement('input');
+                hiddenTarif.type = 'hidden';
+                hiddenTarif.id = 'hidden-tarif';
+                hiddenTarif.name = 'tarif';
+                tarifSelect.parentNode.appendChild(hiddenTarif);
+            }
+            hiddenTarif.value = '4er-Paket';
+        } else {
+            // Für alle anderen Fächer wieder freigeben
+            tarifSelect.disabled = false;
+            const hiddenTarif = document.getElementById('hidden-tarif');
+            if (hiddenTarif) {
+                hiddenTarif.remove();
+            }
+        }
+    });
+}
